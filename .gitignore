@@ -105,3 +105,4 @@ dist
 
 # This directory contains data that can't be distributed by copyright.
 Assets/DoNotDistribute*
+*.resS

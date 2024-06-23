@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.passivepicasso.bundlekit": "git@github.com:foonix/BundleKit.git#0.0.1",
+    "com.passivepicasso.thunderkit": "https://github.com/PassivePicasso/ThunderKit.git#8.0.6",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",

@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "com.passivepicasso.bundlekit": {
+      "version": "git@github.com:foonix/BundleKit.git#0.0.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.scriptablebuildpipeline": "1.19.3"
+      },
+      "hash": "eee1cb773e0dc5ee0bdf7eb4cd299ee463ea3368"
+    },
+    "com.passivepicasso.thunderkit": {
+      "version": "https://github.com/PassivePicasso/ThunderKit.git#8.0.6",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.scriptablebuildpipeline": "1.16.1"
+      },
+      "hash": "c63a5c279e98d1e888bad5f3038db94a4140c39d"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,
@@ -62,6 +80,13 @@
     },
     "com.unity.performance.profile-analyzer": {
       "version": "1.2.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "1.21.5",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -134,6 +159,12 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "ksp2_x64": {
+      "version": "file:KSP2_x64",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

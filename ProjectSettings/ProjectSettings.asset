@@ -683,14 +683,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Ksp2WorldViz
+  metroPackageName: Ksp2WorldVis
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Ksp2WorldViz
+  metroApplicationDescription: Ksp2WorldVis
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -758,7 +758,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9640cddf-acc7-45b8-a4bb-230b967dab34
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames:
   - Fastest
@@ -767,8 +767,8 @@ PlayerSettings:
   - Good
   - Beautiful
   - Fantastic
-  projectName: KSP2
-  organizationId: privatedivision
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   hmiLoadingImage: {fileID: 0}

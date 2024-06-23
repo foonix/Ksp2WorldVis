@@ -1,0 +1,141 @@
+# Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain
+
+*.xcf binary filter=lfs diff=lfs merge=lfs
+*.dds binary filter=lfs diff=lfs merge=lfs
+*.bundle binary filter=lfs diff=lfs merge=lfs
+*.bank binary filter=lfs diff=lfs merge=lfs
+
+# Verbatim: https://github.com/alexkaratarakis/gitattributes/blob/master/Unity.gitattributes
+
+# Unity
+*.cginc              text
+*.cs                 text diff=csharp
+*.shader             text
+
+# Unity YAML
+*.mat                merge=unityyamlmerge eol=lf
+*.anim               merge=unityyamlmerge eol=lf
+*.unity              merge=unityyamlmerge eol=lf
+*.prefab             merge=unityyamlmerge eol=lf
+*.asset              merge=unityyamlmerge eol=lf
+*.meta               merge=unityyamlmerge eol=lf
+*.controller         merge=unityyamlmerge eol=lf
+
+# "physic" for 3D but "physics" for 2D
+*.physicMaterial2D   merge=unityyamlmerge eol=lf
+*.physicMaterial     merge=unityyamlmerge eol=lf
+*.physicsMaterial2D  merge=unityyamlmerge eol=lf
+*.physicsMaterial    merge=unityyamlmerge eol=lf
+
+# Using Git LFS
+# Add diff=lfs merge=lfs to the binary files
+
+# Unity LFS
+*.cubemap            binary filter=lfs diff=lfs merge=lfs
+*.unitypackage       binary filter=lfs diff=lfs merge=lfs
+
+# 3D models
+*.3dm                binary filter=lfs diff=lfs merge=lfs
+*.3ds                binary filter=lfs diff=lfs merge=lfs
+*.blend              binary filter=lfs diff=lfs merge=lfs
+*.c4d                binary filter=lfs diff=lfs merge=lfs
+*.collada            binary filter=lfs diff=lfs merge=lfs
+*.dae                binary filter=lfs diff=lfs merge=lfs
+*.dxf                binary filter=lfs diff=lfs merge=lfs
+*.FBX                binary filter=lfs diff=lfs merge=lfs
+*.fbx                binary filter=lfs diff=lfs merge=lfs
+*.jas                binary filter=lfs diff=lfs merge=lfs
+*.lws                binary filter=lfs diff=lfs merge=lfs
+*.lxo                binary filter=lfs diff=lfs merge=lfs
+*.ma                 binary filter=lfs diff=lfs merge=lfs
+*.max                binary filter=lfs diff=lfs merge=lfs
+*.mb                 binary filter=lfs diff=lfs merge=lfs
+*.obj                binary filter=lfs diff=lfs merge=lfs
+*.ply                binary filter=lfs diff=lfs merge=lfs
+*.skp                binary filter=lfs diff=lfs merge=lfs
+*.stl                binary filter=lfs diff=lfs merge=lfs
+*.ztl                binary filter=lfs diff=lfs merge=lfs
+
+# Audio
+*.aif                binary filter=lfs diff=lfs merge=lfs
+*.aiff               binary filter=lfs diff=lfs merge=lfs
+*.it                 binary filter=lfs diff=lfs merge=lfs
+*.mod                binary filter=lfs diff=lfs merge=lfs
+*.mp3                binary filter=lfs diff=lfs merge=lfs
+*.ogg                binary filter=lfs diff=lfs merge=lfs
+*.s3m                binary filter=lfs diff=lfs merge=lfs
+*.wav                binary filter=lfs diff=lfs merge=lfs
+*.xm                 binary filter=lfs diff=lfs merge=lfs
+
+# Video
+*.asf                binary filter=lfs diff=lfs merge=lfs
+*.avi                binary filter=lfs diff=lfs merge=lfs
+*.flv                binary filter=lfs diff=lfs merge=lfs
+*.mov                binary filter=lfs diff=lfs merge=lfs
+*.mp4                binary filter=lfs diff=lfs merge=lfs
+*.mpeg               binary filter=lfs diff=lfs merge=lfs
+*.mpg                binary filter=lfs diff=lfs merge=lfs
+*.ogv                binary filter=lfs diff=lfs merge=lfs
+*.wmv                binary filter=lfs diff=lfs merge=lfs
+
+# Images
+*.bmp                binary filter=lfs diff=lfs merge=lfs
+*.exr                binary filter=lfs diff=lfs merge=lfs
+*.gif                binary filter=lfs diff=lfs merge=lfs
+*.hdr                binary filter=lfs diff=lfs merge=lfs
+*.iff                binary filter=lfs diff=lfs merge=lfs
+*.jpeg               binary filter=lfs diff=lfs merge=lfs
+*.jpg                binary filter=lfs diff=lfs merge=lfs
+*.pict               binary filter=lfs diff=lfs merge=lfs
+*.png                binary filter=lfs diff=lfs merge=lfs
+*.psd                binary filter=lfs diff=lfs merge=lfs
+*.tga                binary filter=lfs diff=lfs merge=lfs
+*.tif                binary filter=lfs diff=lfs merge=lfs
+*.tiff               binary filter=lfs diff=lfs merge=lfs
+
+# Compressed Archive
+*.7z                binary filter=lfs diff=lfs merge=lfs
+*.bz2               binary filter=lfs diff=lfs merge=lfs
+*.gz                binary filter=lfs diff=lfs merge=lfs
+*.rar               binary filter=lfs diff=lfs merge=lfs
+*.tar               binary filter=lfs diff=lfs merge=lfs
+*.zip               binary filter=lfs diff=lfs merge=lfs
+*.tgz               binary filter=lfs diff=lfs merge=lfs
+
+# Compiled Dynamic Library
+*.dll               binary filter=lfs diff=lfs merge=lfs
+*.pdb               binary filter=lfs diff=lfs merge=lfs
+*.so                binary filter=lfs diff=lfs merge=lfs
+
+# Fonts
+*.otf               binary filter=lfs diff=lfs merge=lfs
+*.ttf               binary filter=lfs diff=lfs merge=lfs
+
+# Executable/Installer
+*.apk               binary filter=lfs diff=lfs merge=lfs
+*.exe               binary filter=lfs diff=lfs merge=lfs
+
+# Documents
+*.pdf               binary filter=lfs diff=lfs merge=lfs
+
+# ETC
+*.a                 binary filter=lfs diff=lfs merge=lfs
+*.rns               binary filter=lfs diff=lfs merge=lfs
+*.reason            binary filter=lfs diff=lfs merge=lfs
+
+# Collapse Unity-generated files on GitHub
+*.asset             linguist-generated
+*.mat               linguist-generated
+*.meta              linguist-generated
+*.prefab            linguist-generated
+*.unity             linguist-generated

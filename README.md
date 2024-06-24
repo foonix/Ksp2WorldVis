@@ -14,12 +14,17 @@ Visual asset and mod development tool for KSP2
 
 ## Initial setup
 
+> [!WARNING]
+>  Do not distribute either the catalog bundle or the `resS` files! Add them to `.gitignore`!
+
 * Clone this git repository, and open it in Unity 2022.3.5
 * Set up the path to your KSP2 installation in ThunderKit settings and run the project importer.
   This may require restarting Unity several times.
 * In the unity Project tab, browse to `Assets/ThunderKitSettings/Pipelines/ImportKsp2ToEditor`.
   Click on it, and then click the "Execute" button in the inspector tab.
   This will generate the BundleKit catalog bundle, which provides the shaders.
+* Temporary step: Copy all `*.resS` from the game data directory, and place them in the project root directory.
+  (This may become unnecessary as BundleKit development progresses.)
 
 ## Using the planet visualizer
 

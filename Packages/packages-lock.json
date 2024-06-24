@@ -235,6 +235,15 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "ksp2community.ksp2unitytools": {
+      "version": "git@github.com:KSP2Community/KSP2UnityTools.git#dev",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.addressables": "1.21.18"
+      },
+      "hash": "30de455c1b9b592c2c421c16837780214d950847"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

@@ -2,6 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
+  serializedVersion: 2
   tags:
   - GUIText
   - SmartWater
@@ -118,51 +119,62 @@ TagManager:
   - Water
   - UI
   - UI.ResearchDevelopment
-  - Physx.Wheel
-  - OAB.Scenery
-  - OAB.Parts
+  - 
+  - 
+  - 
   - Scaled.Scenery
-  - Physx.WheelIgnore
-  - Render.DebugVectors
-  - KSCBuildings
+  - 
+  - 
+  - 
   - Local.Terrain
   - Local.Scenery
   - Internal.Scenery
   - Local.Characters
-  - Render.Skybox
+  - 
   - Local.Parts
   - Local.PartsActive
-  - Physx.PartTriggers
-  - Physx.Scenery
   - 
-  - UI.PhotoBooth
-  - UI.Additional
-  - UI.OAB
-  - Map
-  - Physx.Terrain
-  - Render.DragRender
-  - Render.Flares
-  - Physx.Invisible
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
   - name: SceneUI
     uniqueID: 2617436113
+    locked: 0
   - name: Main
     uniqueID: 856390857
+    locked: 0
   - name: Apps
     uniqueID: 3881061425
+    locked: 0
   - name: Actions
     uniqueID: 3344496545
+    locked: 0
   - name: ScreenMessages
     uniqueID: 3922335887
+    locked: 0
   - name: Dialogs
     uniqueID: 140877403
+    locked: 0
   - name: DragDrop
     uniqueID: 3248275973
+    locked: 0
   - name: Tweening
     uniqueID: 3158114503
+    locked: 0
   - name: Tooltips
     uniqueID: 1069578171
+    locked: 0
   - name: MasterUI
     uniqueID: 1328672607
+    locked: 0

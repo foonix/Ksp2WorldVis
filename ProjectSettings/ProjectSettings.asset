@@ -156,7 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: 
-    Standalone: unity.Intercept Games.Kerbal Space Program 2
+    Standalone: com.Intercept-Games.Kerbal-Space-Program-2
     VisionOS: 
     iPhone: 
     tvOS: 
@@ -260,7 +260,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: {inproject}: {inproject}: {inproject}: '
+  AndroidKeystoreName: '{inproject}: {inproject}: {inproject}: {inproject}: {inproject}: '
   AndroidKeyaliasName: 
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
@@ -325,9 +325,9 @@ PlayerSettings:
     m_GraphicsJobs: 0
   m_BuildTargetGraphicsJobMode:
   - m_BuildTarget: PS4Player
-    m_GraphicsJobMode: 1879163056
+    m_GraphicsJobMode: 1879381552
   - m_BuildTarget: XboxOnePlayer
-    m_GraphicsJobMode: 1879163056
+    m_GraphicsJobMode: 1879381552
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: iOSSupport
     m_APIs: 10000000
@@ -758,7 +758,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9640cddf-acc7-45b8-a4bb-230b967dab34
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames:
   - Fastest
@@ -767,8 +767,8 @@ PlayerSettings:
   - Good
   - Beautiful
   - Fantastic
-  projectName: KSP2
-  organizationId: privatedivision
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   hmiLoadingImage: {fileID: 0}

@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Klm.Unity.Editor
+namespace WorldVis.Editor
 {
     public class BkCatalogResourceAdapter : ResourcesAPI
     {

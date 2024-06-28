@@ -1,4 +1,4 @@
-# KSP2 WolrdVis
+# KSP2 WorldVis
 
 Visual asset and mod development tool for KSP2 
 

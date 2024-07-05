@@ -86,7 +86,7 @@ namespace WorldVis
 
             yield return null;
 
-            previsCameraManager.gameObject.SetActive(true);
+            previsGameInstance.gameObject.SetActive(true);
         }
 
         private T LoadPrefabImmediate<T>(string addressablePath)

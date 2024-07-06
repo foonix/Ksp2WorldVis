@@ -4,6 +4,7 @@ Shader "KSP2/Environment/CelestialBody/CelestialBody_Local_Overlay"
     {
         [MainTexture] _OverlayTexture ("Overlay Texture", 2D) = "black" {}
         _Strength ("Strength", float) = 0.9
+        [Toggle(_USE_PQS_BUFFER)] _NoComputeBuffer ("Use PQS QuadMeshDataBuffer", float) = 0.9
     }
 
     SubShader
@@ -13,18 +14,12 @@ Shader "KSP2/Environment/CelestialBody/CelestialBody_Local_Overlay"
 
         Pass
         {
-            CGPROGRAM
+            HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
 
             #include "UnityCG.cginc"
-
-            struct appdata
-            {
-                float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
-                uint vertexID : SV_VertexID;
-            };
+            #include "QuadMeshDataBuffer.hlsl"
 
             struct v2f
             {
@@ -32,27 +27,15 @@ Shader "KSP2/Environment/CelestialBody/CelestialBody_Local_Overlay"
                 float4 vertex : SV_POSITION;
             };
 
-            struct QuadMeshData
-            {
-                float3 Position;
-				float3 Normal;
-				float2 Uv;
-				float4 Tangent;
-				float4 Height;
-            };
-
             sampler2D _OverlayTexture;
             float _Strength;
-            Buffer<uint> VisibleQuadMeshIndices;
-            StructuredBuffer<QuadMeshData> QuadMeshDataBuffer;
 
             v2f vert (appdata v)
             {
                 v2f o;
-                uint meshIndex = VisibleQuadMeshIndices[v.vertexID];
-                QuadMeshData data = QuadMeshDataBuffer[meshIndex];
-                o.vertex = UnityObjectToClipPos(data.Position);
-                o.uv = data.Uv;
+                QuadMeshData data = GetQuadMeshVert(v);
+                o.vertex = UnityObjectToClipPos(data.position);
+                o.uv = data.uv;
                 return o;
             }
 
@@ -62,7 +45,7 @@ Shader "KSP2/Environment/CelestialBody/CelestialBody_Local_Overlay"
                 col.a = _Strength;
                 return col;
             }
-            ENDCG
+            ENDHLSL
         }
     }
 }

@@ -253,6 +253,52 @@ MonoBehaviour:
   neighborDistance: 1000000
   neighborAngle: 0
   isMoon: 0
+--- !u!1 &818267425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818267426}
+  - component: {fileID: 818267427}
+  m_Layer: 0
+  m_Name: BiomeMaskOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &818267426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818267425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1642902719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &818267427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818267425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86449e6de5cfbe4b8974a3d55324bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeMaskOverlay: {fileID: 2100000, guid: 3f08d7fed9900474f94ae5986ecc308a, type: 2}
+  strength: 0.9
 --- !u!1 &1423971914
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,8 +374,13 @@ MonoBehaviour:
   graphicsManagerPath: Graphics Manager.prefab
   enableDebugScraping: 0
   observerCubemap: {fileID: 0}
-  pQSrenderer: {fileID: 0}
+  pqsRenderer: {fileID: 0}
   pqsRendererDrawArgsBuffer: 00000000000000000000000000000000
+  debugShowBiomeColor: 0
+  debugBiomeEnabled: 0
+  debugBiomeSetting: 15
+  debugTriplanarEnabled: 0
+  debugTriplanarSetting: 2
 --- !u!4 &1642902719
 Transform:
   m_ObjectHideFlags: 0
@@ -344,6 +395,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1423971915}
+  - {fileID: 818267426}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1642902720

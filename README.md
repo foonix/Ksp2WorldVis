@@ -33,6 +33,10 @@ Visual asset and mod development tool for KSP2
 * Open the scene `Assets/Scenes/PqsVis.scene`
 * Enter play mode to view Kerbin.
 
+Overlays:
+* The science overlay button in the GUI shows where the science typs changeover occurs.
+* Enable the BiomeMaskOverlay game object to overlay the planet's `_BiomeMaskTex` texture.
+
 Notable settings:
 * On PrevisCameraManager, the angle and distance of Kerbol can be changed.
   The distance should be set to the distance that the planet orbits Kerbol (or whatever is the parent star).

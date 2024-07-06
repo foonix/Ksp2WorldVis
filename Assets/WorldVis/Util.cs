@@ -45,5 +45,11 @@ namespace WorldVis
 
             return keys;
         }
+
+        public static void CallPrivateVoidMethod<T>(this T obj, string name, params object[] args)
+        {
+            MethodInfo method = typeof(T).GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
+            method.Invoke(obj, args);
+        }
     }
 }

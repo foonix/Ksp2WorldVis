@@ -36,8 +36,17 @@ namespace WorldVis
         [Header("Debug Info scraping")]
         public bool enableDebugScraping;
         public Texture observerCubemap;
-        public PQSRenderer pQSrenderer;
+        public PQSRenderer pqsRenderer;
         public uint[] pqsRendererDrawArgsBuffer = new uint[4];
+
+        [Header("PQS debugging options")]
+        public bool debugShowBiomeColor = false;
+        [Tooltip("Show only PQS quads with the given RGBA values in the biome texture.")]
+        public bool debugBiomeEnabled = false;
+        // needs bitmask editor layout
+        public DebugBiome debugBiomeSetting = DebugBiome.All;
+        public bool debugTriplanarEnabled = false;
+        public DebugTriplanar debugTriplanarSetting = DebugTriplanar.All;
 
         private GraphicsManager graphicsManager;
         private CubemapReflectionSystem cubemapReflectionSystem;
@@ -66,8 +75,13 @@ namespace WorldVis
 
             previsCameraManager.sunPrefab = kerbolPrefab;
 
+            // This seems to be related to PQSRenderer.DebugShowBiomeColor, which
+            // enables the keyword DEBUG_OUTPUT_BIOME_COLOR for CelestialBody_Local
+            // But.. it doesn't seem to work.  The variant may be stripped or some other
+            // property needs to be set.  It may be possible to implement this with an IPQSOverlay.
             var biomDebugUi = LoadPrefabImmediate<GameObject>("BiomeViewDebugCanvas.prefab");
             debugBiomeUIManager = Instantiate(biomDebugUi, previsGameInstance.transform).GetComponent<DebugBiomeUIManager>();
+            debugBiomeUIManager.goUIRoot.SetActive(false);
 
             previsCameraManager.scaledPrefab = LoadPrefabImmediate<GameObject>(flightCameraAssembly_Scaled)
                 .GetComponent<FlightCameraRenderStack_Scaled>();
@@ -87,6 +101,10 @@ namespace WorldVis
             yield return null;
 
             previsGameInstance.gameObject.SetActive(true);
+
+            yield return null;
+
+            pqsRenderer = FindObjectOfType<PQSRenderer>();
         }
 
         private T LoadPrefabImmediate<T>(string addressablePath)
@@ -101,14 +119,24 @@ namespace WorldVis
             if (enableDebugScraping)
             {
                 cubemapReflectionSystem = FindObjectOfType<CubemapReflectionSystem>();
-                pQSrenderer = FindObjectOfType<PQSRenderer>();
-                var volumeCloudRenderer = FindObjectOfType<VolumeCloudRenderer>();
 
                 observerCubemap = cubemapReflectionSystem?.GetObserverCubemapTexture();
-                var argsBuffer = pQSrenderer.GetField<PQSRenderer, ComputeBuffer>("_drawArgsBuffer");
+                var argsBuffer = pqsRenderer.GetField<PQSRenderer, ComputeBuffer>("_drawArgsBuffer");
 
                 argsBuffer.GetData(pqsRendererDrawArgsBuffer);
             }
+
+            if (debugBiomeUIManager != null && pqsRenderer != null
+                && debugShowBiomeColor != debugBiomeUIManager.goUIRoot.activeSelf)
+            {
+                // This is the only thing I can find that triggers setup of DebugBiomeUIManager,
+                // and it has no callers.  It indirectly toggles goUIRoot.activeSelf.
+                pqsRenderer.CallPrivateVoidMethod("OnToggleBiomeDebugView");
+            }
+
+            PQSRenderer.DebugBiome = debugBiomeEnabled ? debugBiomeSetting : DebugBiome.All;
+            PQSRenderer.DebugTriplanar = debugTriplanarEnabled ? debugTriplanarSetting : DebugTriplanar.All;
+            PQSRenderer.DebugShowBiomeColor = debugShowBiomeColor;
         }
     }
 }

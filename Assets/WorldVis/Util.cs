@@ -5,13 +5,20 @@ using UnityEngine.AddressableAssets;
 
 namespace WorldVis
 {
-    static class Util
+    public static class Util
     {
         public static R GetField<T, R>(this T obj, string name)
         {
             var bindingFlags = BindingFlags.NonPublic | BindingFlags.Instance;
             var field = typeof(T).GetField(name, bindingFlags);
             return (R)field?.GetValue(obj);
+        }
+
+        public static T GetFieldValue<T>(this object obj, string name)
+        {
+            var bindingFlags = BindingFlags.NonPublic | BindingFlags.Instance;
+            var field = obj.GetType().GetField(name, bindingFlags);
+            return (T)field?.GetValue(obj);
         }
 
         public static void SetField<T, V>(this T obj, string name, V value)

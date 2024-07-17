@@ -1,0 +1,40 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "WorldVis",
+            "id": "828be577-e428-487d-af69-8abe212f5107",
+            "actions": [
+                {
+                    "name": "Splash Screen Skip",
+                    "type": "Button",
+                    "id": "e1e28ce9-2db9-47e0-9c85-ccbfb716b7a4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "543889dc-819b-49f1-a384-09b41c6e1d3e",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "New control scheme",
+                    "action": "Splash Screen Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New control scheme",
+            "bindingGroup": "New control scheme",
+            "devices": []
+        }
+    ]
+}

@@ -119,31 +119,31 @@ TagManager:
   - Water
   - UI
   - UI.ResearchDevelopment
-  - 
-  - 
-  - 
+  - Physx.Wheel
+  - OAB.Scenery
+  - OAB.Parts
   - Scaled.Scenery
-  - 
-  - 
-  - 
+  - Physx.WheelIgnore
+  - Render.DebugVectors
+  - KSCBuildings
   - Local.Terrain
   - Local.Scenery
   - Internal.Scenery
   - Local.Characters
-  - 
+  - Render.Skybox
   - Local.Parts
   - Local.PartsActive
+  - Physx.PartTriggers
+  - Physx.Scenery
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - UI.PhotoBooth
+  - UI.Additional
+  - UI.OAB
+  - Map
+  - Physx.Terrain
+  - Render.DragRender
+  - Render.Flares
+  - Physx.Invisible
   m_SortingLayers:
   - name: Default
     uniqueID: 0

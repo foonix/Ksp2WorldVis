@@ -10,7 +10,9 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Assembly-CSharp.dll"
+        "Assembly-CSharp.dll",
+        "Assembly-CSharp-firstpass.dll",
+        "DOTweenPro.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [],

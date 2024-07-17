@@ -21,7 +21,71 @@ MonoBehaviour:
     IsObjectAssembly: 0
     IsFlightMode: 0
     InGameSession: 0
+  - GameState: 3
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 10
+    IsObjectAssembly: 1
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 11
+    IsObjectAssembly: 1
+    IsFlightMode: 0
+    InGameSession: 1
   - GameState: 20
     IsObjectAssembly: 0
     IsFlightMode: 1
-    InGameSession: 0
+    InGameSession: 1
+  - GameState: 21
+    IsObjectAssembly: 0
+    IsFlightMode: 1
+    InGameSession: 1
+  - GameState: 22
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 30
+    IsObjectAssembly: 0
+    IsFlightMode: 1
+    InGameSession: 1
+  - GameState: 40
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 41
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 42
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 43
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 44
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 45
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 46
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 31
+    IsObjectAssembly: 0
+    IsFlightMode: 1
+    InGameSession: 1
+  - GameState: 33
+    IsObjectAssembly: 0
+    IsFlightMode: 0
+    InGameSession: 1
+  - GameState: 32
+    IsObjectAssembly: 0
+    IsFlightMode: 1
+    InGameSession: 1

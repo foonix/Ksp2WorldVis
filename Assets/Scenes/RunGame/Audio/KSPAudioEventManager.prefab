@@ -1,0 +1,373 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2375647704839868032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923640749950961139}
+  m_Layer: 0
+  m_Name: UI Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &923640749950961139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2375647704839868032}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8278463905040379224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8305195202559706703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8278463905040379224}
+  - component: {fileID: 4877436567118091709}
+  - component: {fileID: 5440069954107937079}
+  - component: {fileID: 3244337646531372294}
+  - component: {fileID: 8608884421429433185}
+  m_Layer: 0
+  m_Name: KSPAudioEventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8278463905040379224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305195202559706703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 923640749950961139}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4877436567118091709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305195202559706703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -786342924, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _propertyWatcherBindings: []
+  _audioEventBindings: []
+  _uiEvents:
+    OnUIButtonDown: []
+    OnUIButtonHover: []
+    OnUIButtonToggle: []
+    OnTypewriterSound: []
+    OnTabAwayResumeSound: []
+    OnKSCBuildingClick: []
+  _vehicleEvents:
+    OnVehicleActivated: []
+    OnVehicleDeactivated: []
+    OnVehicleDocked: []
+    OnVehicleUndocked: []
+    OnActiveVehicleIsARover: []
+    OnActiveVehicleIsNotARover: []
+  _GameFlowEvents:
+    onGameEnterKSC: []
+    onGameEnterVAB: []
+    onGameEnterDeepSpace: []
+    onGameActivateMonument: []
+    onGameLaunch: []
+    onGameLaunchAtmos: []
+    onGameLaunchLiftoff: []
+    onGameLaunchOrbit: []
+    onGameLandingSafe: []
+    onGameLose: []
+    onGamePaused: []
+    onGameUnpaused: []
+    onGameEnterTutorial: []
+    onGameLeaveTutorial: []
+    onGameQuickSave: []
+    onGameQuickLoad: []
+    onSetLaunchLocationLaunchpad: []
+    onSetLaunchLocationLaunchpad_1: []
+    onSetLaunchLocationLaunchpad_2: []
+    onSetLaunchLocationLaunchpad_3: []
+    onSetLaunchLocationLaunchpad_4: []
+    onSetLaunchLocationRunway: []
+    onSetLaunchLocationRunway_1: []
+    onSetLaunchLocationRunway_2: []
+    onSetLaunchLocationOrbital: []
+    onGameEnterTrainingCenter: []
+    onGameLeaveTrainingCenter: []
+    onGameEnterResearchAndDevelopment: []
+    onGameLeaveResearchAndDevelopment: []
+    onGameEnterMissionControl: []
+    onGameLeaveMissionControl: []
+  _VABSoundEvents:
+    onPartsListCategorySelected: []
+    onPartsListCategoryHover: []
+    onPartsListPartHover: []
+    onFavoritePartsListPartHover: []
+    onButtonLaunch: []
+    onBttonToolToggle: []
+    onEditorPartHighlight: []
+    onEditorPartSnapped: []
+    onEditorPlaceConnected: []
+    onEditorPlaceNonConnected: []
+    onEditorPartDisconnected: []
+    onEditorPartGrabbed: []
+    onEditorPartDropped: []
+    onEditorPlacePartTrash: []
+    onEditorHoverPartTrash: []
+    onVABCutsceneEnd: []
+    onVABEnterBlueprintMode: []
+    onVABExitBlueprintMode: []
+    onVABBlueprintModeChangeOrientation: []
+    onVABCubeHoverStart: []
+    onVABCubeHoverStop: []
+    OnStagingStackBeginDrag: []
+    OnStagingStackEndDrag: []
+  _timeWarpEvents:
+    WarpTo1:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo2:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo3:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo4:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo5:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo6:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo7:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo8:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo9:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    WarpTo10:
+      TimeWarpStarted:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      TimeWarpFinished:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+  _FlightSoundEvents:
+    onPartHighlight: []
+    onPartMenuOpened: []
+    onPartMenuClosed: []
+  _mapModeEvents:
+    onShowManeuverPopup: []
+    onHideManeuverPopup: []
+    onWarpTo: []
+    onGizmoCreated: []
+    onGizmoDeleted: []
+    onGizmoExpanded: []
+    onGizmoCollpased: []
+    onGizmoPropgradeManipulated:
+      onStarted: []
+      onFinished: []
+    onGizmoRetrogradeManipulated:
+      onStarted: []
+      onFinished: []
+    onGizmoRadialOutManipulated:
+      onStarted: []
+      onFinished: []
+    onGizmoRadialInManipulated:
+      onStarted: []
+      onFinished: []
+    onGizmoNormalManipulated:
+      onStarted: []
+      onFinished: []
+    onGizmoAntiNormalManipulated:
+      onStarted: []
+      onFinished: []
+    onGizmoDrag:
+      onStarted: []
+      onFinished: []
+    onManeuverScrub:
+      onStarted: []
+      onFinished: []
+    onManeuverETA_RemaingingTime_3: []
+    onManeuverETA_RemaingingTime_2: []
+    onManeuverETA_RemaingingTime_1: []
+    onManeuverETA_RemaingingTime_0: []
+  _notificationEvents:
+    OnPassiveNotificationOpen: []
+    OnPassiveNotificationClose: []
+    OnAlertNotificationOpen: []
+    OnAlertNotificationClose: []
+    OnAdminNotificationOpen: []
+    OnAdminNotificationClose: []
+  _resourceEvents:
+    OnResourceTransfertStart: []
+    OnResourceTransfertStop: []
+  PartAudioSettings:
+    WheelRoverDetectionTime: 3
+    WheelRoverCooldownDetectionTime: 3
+    WheelRoverMinNumberOfWheel: 2
+    AirplaneWheelTouchDown_MinAirTime: 20
+    AirplaneWheelTouchDown_MinAltitude: 1000
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &5440069954107937079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305195202559706703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -130519023, guid: 2b6c926553287666f24ffd5af5ba21cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!54 &3244337646531372294
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305195202559706703}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8608884421429433185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305195202559706703}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

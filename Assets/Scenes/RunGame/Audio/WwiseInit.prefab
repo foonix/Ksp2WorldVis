@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationSettings: {fileID: 11400000, guid: d1a046904f62e1548b6a33607ebe9639, type: 2}
-  EventManagerPrefab: {fileID: 0}
+  EventManagerPrefab: {fileID: 8305195202559706703, guid: 0d6fb9dd60770ee40a1246b2499d4ece, type: 3}
   AudioListenerPrefab: {fileID: 1963098524070830974, guid: 721c88b8bcedfee4997ce800856da167, type: 3}
   EnableLateUpdateObjects: 1
 --- !u!114 &3360203770012603960

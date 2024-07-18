@@ -12,7 +12,8 @@
     "overrideReferences": true,
     "precompiledReferences": [
         "Assembly-CSharp.dll",
-        "AK.Wwise.Unity.API.dll"
+        "AK.Wwise.Unity.API.dll",
+        "ShapesRuntime.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

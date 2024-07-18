@@ -34,5 +34,19 @@ namespace WorldVis.Editor
 
             Selection.activeObject = asset;
         }
+
+        // ShapesAssets
+        [MenuItem("Assets/Create/ScriptableObjects/ShapesAssets")]
+        private static void CreateShapesAssets()
+        {
+            var asset = ScriptableObject.CreateInstance<Shapes.ShapesAssets>();
+
+            AssetDatabase.CreateAsset(asset, "Assets/Resources/Shapes Assets.asset");
+            AssetDatabase.SaveAssets();
+
+            EditorUtility.FocusProjectWindow();
+
+            Selection.activeObject = asset;
+        }
     }
 }

@@ -3,6 +3,7 @@ using KSP.Game;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace WorldVis
 {
@@ -13,7 +14,10 @@ namespace WorldVis
         public DOTweenAnimation splashAnim;
         public SplashScreensManager splashScreensManager;
 
-
+        private void Awake()
+        {
+            Util.LoadGameBurstCode();
+        }
 
         void LateUpdate()
         {

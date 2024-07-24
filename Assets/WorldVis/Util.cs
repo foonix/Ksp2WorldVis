@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
+using Unity.Burst;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace WorldVis
@@ -57,6 +60,21 @@ namespace WorldVis
         {
             MethodInfo method = typeof(T).GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
             method.Invoke(obj, args);
+        }
+
+        public static void LoadGameBurstCode()
+        {
+            var burstLibFullpath = Path.GetFullPath("Packages/KSP2_x64/plugins/lib_burst_generated.dll");
+            if (!File.Exists(burstLibFullpath))
+            {
+                Debug.Log($"Can't find burst assembly at {burstLibFullpath}");
+            }
+
+            bool burstLoaded = BurstRuntime.LoadAdditionalLibrary(burstLibFullpath);
+            if (!burstLoaded)
+            {
+                Debug.Log($"BurstRuntime failed to load assembly at {burstLibFullpath}");
+            }
         }
     }
 }

@@ -3,10 +3,10 @@ using KSP.Game;
 using KSP.Rendering;
 using KSP.Rendering.impl;
 using KSP.Rendering.Planets;
-using KSP.VolumeCloud;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.SceneManagement;
 
 namespace WorldVis
 {
@@ -53,6 +53,11 @@ namespace WorldVis
 
         private IEnumerator Start()
         {
+            SceneManager.CreateScene("auxPhysicsScene");
+
+            Util.LoadGameBurstCode();
+            yield return null;
+
             previsGameInstance.SetProperty("Assets", assetProvider);
 
             var gmPrefab = LoadPrefabImmediate<GameObject>(graphicsManagerPath);

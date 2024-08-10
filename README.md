@@ -27,6 +27,7 @@ Visual asset and mod development tool for KSP2
   This will generate the BundleKit catalog bundle, which provides the shaders.
 * Temporary step: Copy all `*.resS` from the game data directory, and place them in the project root directory.
   (This may become unnecessary as BundleKit development progresses.)
+* Go to `Jobs -> Burst` menu and uncheck `Enable Compilation`
 
 ## Using the planet visualizer
 

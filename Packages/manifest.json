@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.passivepicasso.bundlekit": "git@github.com:foonix/BundleKit.git#0.0.1",
+    "com.passivepicasso.bundlekit": "https://github.com/foonix/BundleKit.git#0.0.1",
     "com.passivepicasso.thunderkit": "https://github.com/PassivePicasso/ThunderKit.git#8.0.6",
     "com.unity.addressables": "1.21.21",
     "com.unity.burst": "1.8.16",
@@ -12,7 +12,7 @@
     "com.unity.timeline": "1.7.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.8.0",
-    "ksp2community.ksp2unitytools": "git@github.com:KSP2Community/KSP2UnityTools.git#dev",
+    "ksp2community.ksp2unitytools": "https://github.com/KSP2Community/KSP2UnityTools.git#dev",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

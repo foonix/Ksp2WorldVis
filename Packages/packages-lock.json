@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.passivepicasso.bundlekit": {
-      "version": "git@github.com:foonix/BundleKit.git#0.0.1",
+      "version": "https://github.com/foonix/BundleKit.git#0.0.1",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -236,7 +236,7 @@
       "dependencies": {}
     },
     "ksp2community.ksp2unitytools": {
-      "version": "git@github.com:KSP2Community/KSP2UnityTools.git#dev",
+      "version": "https://github.com/KSP2Community/KSP2UnityTools.git#dev",
       "depth": 0,
       "source": "git",
       "dependencies": {

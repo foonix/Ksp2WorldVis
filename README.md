@@ -28,6 +28,7 @@ Visual asset and mod development tool for KSP2
 * Temporary step: Copy all `*.resS` from the game data directory, and place them in the project root directory.
   (This may become unnecessary as BundleKit development progresses.)
 * Go to `Jobs -> Burst` menu and uncheck `Enable Compilation`
+* In the `Project` window, browse to `Packages\KSP2_x64\plugins`, then click on `LogitechLedEnginesWrapper`, then in the `Inspector` window click `Load on startup`
 
 ## Using the planet visualizer
 
